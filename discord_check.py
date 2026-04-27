@@ -12,6 +12,7 @@ username = input("Enter the username to check: ")
 
 payload = {
     "username": username,
+    "discriminator": "0000"
 }
 response = requests.post(URL, json=payload, headers=HEADERS)
 
